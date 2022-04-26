@@ -18,10 +18,6 @@ public class PatientService {
         this.patients.put(patient.getId(), patient);
     }
 
-    // public Patient map(PatientCreateDto dto){
-    //    return new Patient(dto.getId(), dto.getName(), dto.getSurname(), dto.getPesel());
-    //}
-
     public void updatePatient(int id, Patient patient){
         if(this.patients.containsKey(patient.getId())){
             this.patients.put(patient.getId(), patient);
